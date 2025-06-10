@@ -1,0 +1,15 @@
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Backup or temporary files
+*.log
+*.tmp
+*.swp
+*.bak
+*~
+
+# Node projects (if you later use npm or a build tool)
+node_modules/
+dist/

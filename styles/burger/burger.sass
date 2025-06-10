@@ -1,0 +1,30 @@
+.burger
+    height: 909px
+    background-color: #0578FF
+    
+    position: fixed
+    top: 99px
+    width: 100%
+    z-index: 1000 
+    transition: left .7s ease-in
+
+    &__closed
+        left: -100%
+    &__opened
+        left:0
+
+    &__container.container
+       padding: 64px 20px
+
+    &__list
+        list-style-type: none
+        padding-left: 0
+        margin: 0
+        li
+          margin-bottom: 64px
+    &__link
+        font-size: 32px
+        line-height: 27px
+        color: #fff
+        text-decoration: none
+        

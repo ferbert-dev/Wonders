@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div class="three-first-sections">
+            <header class="header">
+                <div class="container header__container">
+                    <img src="assets/icons/logo_icon.svg" alt="Logo"
+                        class="logo">
+
+                    <button id="burger-opener" class="header__burger-button">
+                        <img id="burger-icon"
+                            src="assets/icons/burger_opened_icon.svg"
+                            alt="Menu Icon">
+                    </button>
+                </div>
+            </header>
+
+            <div id="burger" class="burger burger__closed">
+                <div class="container burger__container">
+                    <nav>
+                        <ul class="burger__list">
+                            <li><a href="#mobile-app"
+                                    class="burger__link">Mobile
+                                    App</a></li>
+                            <li><a href="#faq"
+                                    class="burger__link">FAQs</a></li>
+                            <li><a href="#contact"
+                                    class="burger__link">Contact</a></li>
+                            <li><a href="#sign-up" class="burger__link">Sign
+                                    Up</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <section class="hero">
+                <div class="container">
+                    <h1>Skip the Climbing, Catch the Bus</h1>
+
+                    <p>
+                        We sell tickets to the best seats in the house – houses
+                        on wheels,
+                        that is! Get ready for jaw-dropping views without
+                        breaking a sweat.
+                    </p>
+
+                    <form class="hero-form">
+                        <div class="trip-type">
+                            <div class="radio-wrapper">
+                                <input
+                                    id="round-trip"
+                                    type="radio"
+                                    name="trip-type"
+                                    value="round-trip" checked />
+                                <label for="round-trip">Round trip</label>
+                            </div>
+
+                            <div class="radio-wrapper">
+                                <input
+                                    id="one-way-trip"
+                                    type="radio"
+                                    name="trip-type"
+                                    value="one-way-trip" />
+                                <label for="one-way-trip">One way</label>
+                            </div>
+
+                            <div class="counter">
+                                <img src="assets/icons/person_icon.svg" />
+                                <button id="trip-minus">-</button>
+                                <span id="trip-counter">1</span>
+                                <button id="trip-plus">+</button>
+                            </div>
+                        </div>
+
+                        <label for="departure"
+                            class="hero-form__label">Departure</label>
+                        <input
+                            id="departure"
+                            class="hero-form__input"
+                            placeholder="Your City/Station" />
+
+                        <label for="departure"
+                            class="hero-form__label">Arrival</label>
+                        <input
+                            id="departure"
+                            class="hero-form__input"
+                            placeholder="Where to?" />
+
+                        <label for="departure" class="hero-form__label">Pick
+                            your lucky day</label>
+
+                        <div class="calendar-input-wrapper">
+                            <input
+                                id="departure"
+                                type="date"
+                                class="hero-form__input"
+                                placeholder="Depart" />
+                        </div>
+
+                        <div class="calendar-input-wrapper">
+                            <input
+                                id="departure"
+                                type="date"
+                                class="hero-form__input"
+                                placeholder="Return" />
+                        </div>
+
+                        <button class="submit">Find My Alpine Ride</button>
+                    </form>
+                </div>
+                 </div>
+            </section>
+            <section class="statistics">
+                <div class="container statistics-container">
+                    <div class="cell">
+                        <h3>1.4M+</h3>
+                        <p>Daily trains</p>
+                    </div>
+
+                    <div class="cell">
+                        <h3>68k+</h3>
+                        <p>Photos Taken</p>
+                    </div>
+
+                    <div class="cell">
+                        <h3>165+</h3>
+                        <p>Years of history</p>
+                    </div>
+
+                    <div class="cell">
+                        <h3>23M+</h3>
+                        <p>Altitude Gained</p>
+                    </div>
+                </div>
+        </section>
+        
+        <script src="scripts/burger.js"></script>
+    </body>
+</html>

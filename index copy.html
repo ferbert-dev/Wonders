@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header__container">
+                <img src="assets/icons/logo_icon.svg" alt="Logo" class="logo">
+
+                <button id="burger-opener" class="header__burger-button">
+                    <img id="burger-icon"
+                        src="assets/icons/burger_opened_icon.svg"
+                        alt="Menu Icon">
+                </button>
+
+            </div>
+        </header>
+
+        <div id="burger" class="burger burger__closed">
+            <div class="container burger__container">
+                <nav>
+                    <ul class="burger__list">
+                        <li><a href="#mobile-app" class="burger__link">Mobile
+                                App</a></li>
+                        <li><a href="#faq" class="burger__link">FAQs</a></li>
+                        <li><a href="#contact"
+                                class="burger__link">Contact</a></li>
+                        <li><a href="#sign-up" class="burger__link">Sign
+                                Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <script src="scripts/burger.js"></script>
+
+        <section class="container input__container">
+            <h2>
+                Skip the Climbing, Catch the Bus
+            </h2>
+            <p>We sell tickets to the best seats in the house &ndash; houses on
+                wheels, that is! Get ready for jaw&ndash;dropping views without
+                breaking a sweat.</p>
+            <section class="hero">     
+            <div class="options">
+                <div class="trip-type">
+               <div class="round-trip">
+                    <input type="radio" name="way" value="1" checked>
+                    <label for="round-trip"> Round trip</label>
+                </div>
+
+                <div class="one-way">
+                    <input type="radio" name="way" value="1" checked>
+                    <label for="one-way"> One Way</label>
+                </div>
+
+                <div class="options__person">
+                    <img id="person-icon" src="assets/icons/person_icon.svg"
+                        alt="Person icon">
+                    <div class="person_control">
+                        <button id="person-remove-button"
+                            class="options__person__icon">
+                            <img id="person-remove-button-icon"
+                                src="assets/icons/minus_icon.svg"
+                                alt="Minus Icon">
+                        </button>
+                        <p id="person-count" class="person_count">1</p>
+                        <button id="person-add-button"
+                            class="options__person__icon">
+                            <img id="person-add-button-icon"
+                                src="assets/icons/plus_icon.svg"
+                                alt="Plus Icon">
+                        </button>
+                    </div>
+                </div>
+
+
+                </div>
+                <div class="round-trip">
+                    <input type="radio" name="way" value="1" checked>
+                    <label for="round-trip"> Round trip</label>
+                </div>
+
+                <div class="one-way">
+                    <input type="radio" name="way" value="1" checked>
+                    <label for="one-way"> One Way</label>
+                </div>
+
+                <div class="options__person">
+                    <img id="person-icon" src="assets/icons/person_icon.svg"
+                        alt="Person icon">
+                    <div class="person_control">
+                        <button id="person-remove-button"
+                            class="options__person__icon">
+                            <img id="person-remove-button-icon"
+                                src="assets/icons/minus_icon.svg"
+                                alt="Minus Icon">
+                        </button>
+                        <p id="person-count" class="person_count">1</p>
+                        <button id="person-add-button"
+                            class="options__person__icon">
+                            <img id="person-add-button-icon"
+                                src="assets/icons/plus_icon.svg"
+                                alt="Plus Icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </body>
+</html>

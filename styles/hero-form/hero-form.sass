@@ -1,0 +1,91 @@
+
+.hero-form
+  &__label
+    display: block
+    font-size: 16px
+    font-weight: 600
+    margin-top: 24px
+
+  &__input
+    width: 100%
+    display: block
+    height: 53px
+    border-radius: 10px
+    padding: 16px 24px
+    margin-top: 16px
+    border: 0
+    outline: none
+
+  .submit
+    background-color: #0578FF
+    border-radius: 10px
+    height: 62px
+    font-size: 20px
+    color: #fff
+    font-weight: 700
+    text-align: center
+    width: 100%
+    border: 0
+    margin-top: 24px
+  
+.trip-type
+  background: #fff
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-radius: 10px
+  height: 34px
+  padding: 3px 8px
+
+  label
+    font-size: 12px
+
+  input
+    margin: 0
+
+  .radio-wrapper
+    display: flex
+    align-items: center
+    gap: 6px
+
+  .counter
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 88px
+
+    font-size: 12px
+    font-weight: 500
+
+
+    button
+      background: none
+      border: 0
+      font-size: 16px
+
+      &:last-child
+        color: #0578FF
+
+
+.calendar-input-wrapper
+  position: relative
+  &::before
+    display: block
+    position: absolute
+    width: 15.5px
+    height: 16px
+    left: 24px
+    top: 18.5px
+    content: ''
+    background-image: url('../../assets/icons/calendar_icon.svg')
+    background-repeat: no-repeat
+    background-position: center
+  
+  input
+    padding-left: 52px
+
+// Hide the spin button and calendar icon in date input fields
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator 
+    display: none
+    -webkit-appearance: none

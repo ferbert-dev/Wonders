@@ -1,0 +1,12 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__container.container {
+  padding: 32.5px 20px;
+}
+.header__burger-button {
+  background: none;
+  border: 0;
+}/*# sourceMappingURL=header.css.map */

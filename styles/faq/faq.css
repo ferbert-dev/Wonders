@@ -1,14 +1,18 @@
 .faqs {
-  display: block;
-  font-family: sans-serif;
-  margin: 64px 20px;
+  display: flex;
+  margin: 64px auto 128px auto;
   max-width: 1086px;
   align-items: center;
   text-align: center;
 }
+.faqs .container {
+  width: 100%;
+}
 .faqs h1 {
-  font-size: 40px;
+  font-size: 64px;
   font-weight: bold;
+  text-align: left;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 .faqs .intro strong {

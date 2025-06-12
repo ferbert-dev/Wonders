@@ -1,6 +1,7 @@
 .faqs {
+  display: block;
   font-family: sans-serif;
-  margin: 40px auto;
+  margin: 64px auto;
   max-width: 1086px;
 }
 .faqs h1 {

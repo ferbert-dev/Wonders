@@ -1,8 +1,10 @@
 .faqs {
   display: block;
   font-family: sans-serif;
-  margin: 64px auto;
+  margin: 64px 20px;
   max-width: 1086px;
+  align-items: center;
+  text-align: center;
 }
 .faqs h1 {
   font-size: 40px;

@@ -1,0 +1,42 @@
+.faqs {
+  font-family: sans-serif;
+  margin: 40px auto;
+  max-width: 1086px;
+}
+.faqs h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.faqs .intro strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.faqs .intro p {
+  color: #444;
+}
+.faqs .faq {
+  border-top: 1px solid #ccc;
+}
+.faqs .faq.first {
+  border-top: none;
+}
+.faqs .faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 20px 0;
+}
+.faqs .faq-content {
+  display: none;
+  padding-bottom: 15px;
+  color: #444;
+}
+.faqs .faq.active .faq-content {
+  display: block;
+}
+.faqs .faq-header span {
+  font-size: 24px;
+}/*# sourceMappingURL=faq.css.map */

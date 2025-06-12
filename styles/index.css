@@ -5,6 +5,7 @@
 @import url(statistics/statistics.css);
 @import url(find-your-dream/find-your-dream.css);
 @import url(mobile-apps/mobile-apps.css);
+@import url(faq/faq.css);
 * {
   box-sizing: border-box;
   font-family: "Poppins";

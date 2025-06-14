@@ -3,17 +3,23 @@
   padding: 64px 0;
   background: linear-gradient(#e7f0fb, #ecf2f8, #f3f4f6);
 }
-
-.find-your-dream-title {
+.find-your-dream__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  gap: 20px;
+}
+.find-your-dream__container h1 {
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 100%;
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: left;
+  margin: 0;
 }
-
-.gallery {
+.find-your-dream__gallery {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -21,7 +27,7 @@
   align-items: center;
   gap: 12px;
 }
-.gallery__images {
+.find-your-dream__images {
   display: flex;
   gap: 12px;
   flex-direction: column;

@@ -1,71 +1,85 @@
 .footer
-  display: flex
-  flex-direction: column
-  align-items: center
-  width: 100%
-  padding-top: 64px
-  background-color: #0578FF
-  color: #FFFFFF
-
-.footer_about
-  display: flex
-  flex-direction: row
-  align-items: left
-  justify-content: left
-  gap: 16px
-  font-size: 34px
-  width: 100%
-  height: 100%
-
-.container .footer_content
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
-  flex-wrap: wrap
-  gap: 32px
-  margin-bottom: 70px
-
-.footer_column.footer_title
-  display: block
-  font-size: 20px
-  font-weight: 600
-  line-height: 150%
-  letter-spacing: -2%
-  margin-bottom: 20px
-
-.footer_column.footer_list
-  font-size: 16px
-  font-weight: 600
-  line-height: 150%
-  letter-spacing: -2%
-
-.footer .footer_content .footer_columns
-  display: flex
-  flex-direction: column
-  flex-wrap: wrap
-  width: 320px
-  height: 512px
-  font-size: 16px
-
-.footer_column
+  //display: flex
+  //flex-direction: column
+  //align-items: center
+  //width: 100%
+  //padding-top: 64px
+  //background-color: #0578FF
+  //color: #FFFFFF
+  &__container
     display: flex
     flex-direction: column
+    align-items: center
+    width: 100%
+    padding-top: 64px
+    background-color: #0578FF
+    color: #FFFFFF
 
-.footer_list
-    list-style: none
-    padding: 0
-    margin: 0
-    flex: wrap
-    gap: 26px
-    display: flex
-    flex-direction: column
+    &__content
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      flex-wrap: wrap
+      gap: 32px
+      margin-bottom: 70px
+    
+      &__about
+        display: flex
+        flex-direction: row
+        align-items: left
+        justify-content: left
+        gap: 16px
+        font-size: 34px
+        width: 100%
+        height: 100%
 
-.footer_copyright
-  display: block
-  text-align: center
+      &__columns  
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        width: 320px
+        height: 512px
+        font-size: 16px
+
+        &__column
+          display: flex
+          flex-direction: column
+          
+          h3
+            font-size: 20px 
+            margin-bottom: 20px
+
+          ul
+            display: flex
+            flex-direction: column
+            list-style: none
+            padding: 0
+            margin: 0
+            gap: 26px
+      
+      &__copyright
+        display: block
+        text-align: left
+        flex-direction: column
+        font-weight: 600
+        font-style: normal
+        line-height: 150%
+        letter-spacing: -2%
+
+.plus-jakarta-sans-600
+  font-family: "Plus Jakarta Sans", sans-serif
+  font-optical-sizing: auto
   font-weight: 600
-  flex-direction: column
+  font-style: normal
   line-height: 150%
   letter-spacing: -2%
-  font-size: 16px
+
+.plus-jakarta-sans-500
+  font-family: "Plus Jakarta Sans", sans-serif
+  font-optical-sizing: auto
+  font-weight: 500
+  font-style: normal
+  line-height: 150%
+  letter-spacing: -2%
+

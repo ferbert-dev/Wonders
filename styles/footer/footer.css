@@ -1,4 +1,4 @@
-.footer {
+.footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,8 +7,16 @@
   background-color: #0578FF;
   color: #FFFFFF;
 }
-
-.footer_about {
+.footer__container__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 70px;
+}
+.footer__container__content__about {
   display: flex;
   flex-direction: row;
   align-items: left;
@@ -18,34 +26,7 @@
   width: 100%;
   height: 100%;
 }
-
-.container .footer_content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 32px;
-  margin-bottom: 70px;
-}
-
-.footer_column.footer_title {
-  display: block;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 150%;
-  letter-spacing: -2%;
-  margin-bottom: 20px;
-}
-
-.footer_column.footer_list {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 150%;
-  letter-spacing: -2%;
-}
-
-.footer .footer_content .footer_columns {
+.footer__container__content__columns {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -53,28 +34,46 @@
   height: 512px;
   font-size: 16px;
 }
-
-.footer_column {
+.footer__container__content__columns__column {
   display: flex;
   flex-direction: column;
 }
-
-.footer_list {
+.footer__container__content__columns__column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.footer__container__content__columns__column ul {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding: 0;
   margin: 0;
-  flex: wrap;
   gap: 26px;
-  display: flex;
-  flex-direction: column;
 }
-
-.footer_copyright {
+.footer__container__content__copyright {
   display: block;
-  text-align: center;
-  font-weight: 600;
+  text-align: left;
   flex-direction: column;
+  font-weight: 600;
+  font-style: normal;
   line-height: 150%;
   letter-spacing: -2%;
-  font-size: 16px;
+}
+
+.plus-jakarta-sans-600 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 150%;
+  letter-spacing: -2%;
+}
+
+.plus-jakarta-sans-500 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 150%;
+  letter-spacing: -2%;
 }/*# sourceMappingURL=footer.css.map */

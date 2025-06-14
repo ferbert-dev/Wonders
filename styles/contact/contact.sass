@@ -1,55 +1,54 @@
 .contact
     display: block
     background: #0578FF // Primary Blue Train
-    color: black // White
-    &.container
+    color: #202020 //
+    &__container
         max-width: 1440px
-.contact-card
-    display: block
-    min-width: 320px
-    max-width: 640px
-    max-height: 397px
-    background: #FFF// White
-    border-radius: 10px
-    border: 1px solid #20202080
-    padding: 60px 30px
-    position: relative 
-    top: -100px // move up 
-    margin-left: auto      // Center horizontally
-    margin-right: auto 
 
-.contact-card h1
-    display: block
-    font-size: 36px
-    font-weight: 700
-    text-align: center
-    margin: 0 0 30px 0
+        &__contact-card
+            display: block
+            min-width: 320px
+            min-height: 341px
+            max-width: 640px
+            max-height: 397px
+            background: #FFF// White
+            border-radius: 10px
+            border: 1px solid #20202080 //shape color
+            padding: 60px 30px
+            position: relative 
+            top: -100px // move up 
+            margin-left: auto  // Center horizontally
+            margin-right: auto 
 
-.contact-card.content
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    flex-flow: row wrap
-    margin: 0
+            .content
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                margin: 0
 
-.contact-text a
-    display: block
-    font-size: 20px
-    font-weight: 400
-    line-height: 140%
-    letter-spacing: 0
-    text-decoration: none
-    text-align: center
-    color: #202020 
+                h1
+                    font-size: 36px
+                    font-weight: 700
+                    line-height: 120%
+                    text-align: center
+                    margin: 0 0 30px 0
 
-.contact-adress 
-    display: block
-    font-size: 20px
-    font-weight: 400
-    line-height: 140%
-    letter-spacing: 0
-    text-decoration: none
-    text-align: center
-    color: #202020 
-    margin: 30px 0 0 0
+                &__contact_email_phone
+                    display: flex
+                    flex-direction: column
+                    gap: 10px
+                    margin: 0
+                    width: 100%
+
+                &__contact-adress 
+                    margin: 30px 0 0 0
+
+                &__card-text
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 140%
+                    letter-spacing: 0
+                    color: #202020
+                    text-decoration: none
+                    text-align: center

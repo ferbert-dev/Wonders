@@ -1,23 +1,29 @@
 .statistics
   background: #0578FF
+  color: #fff
 
-  &-container.container
+  .container
+    width: 100%
+    max-width: 1200px
+    padding: 35.5px 0
+
+  &__container
     display: flex
     flex-wrap: wrap
-    // justify-content: center
-    // gap: 30px
-    padding-top: 35.5px
-    padding-bottom: 35.5px
+    align-items: center
+    justify-content: center
+    &__wrapper
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: auto auto
+      gap: 40px
 
-  .cell
-    width: 50%
-    // width: calc(50% - 60px)
+  &__cell
+    display: flex
+    flex-direction: column
     text-align: center
-    color: #fff
 
-    margin-bottom: 30px
-
-    h3
+    h1
       font-size: 40px
       font-weight: 700
       margin-top: 0

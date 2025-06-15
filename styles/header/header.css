@@ -6,7 +6,53 @@
 .header__container.container {
   padding: 32.5px 20px;
 }
+.header__container__icon__text {
+  display: none;
+}
 .header__burger-button {
   background: none;
   border: 0;
+}
+
+@media (min-width: 768px) {
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__container.container {
+    padding: 40px 32px;
+  }
+  .header__container__icon {
+    display: flex;
+    direction: row;
+    gap: 12px;
+  }
+  .header__container__icon__text {
+    display: block;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: black;
+  }
+  .header__burger-button {
+    background: none;
+    border: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__container.container {
+    padding: 32.5px 20px;
+  }
+  .header__burger-button {
+    background: none;
+    border: 0;
+  }
 }/*# sourceMappingURL=header.css.map */

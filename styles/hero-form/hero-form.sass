@@ -47,27 +47,25 @@
     display: flex
     align-items: center
     gap: 6px
-
+  
   .counter
     display: flex
     align-items: center
     justify-content: space-between
     width: 88px
-
     font-size: 12px
     font-weight: 500
-
 
     button
       background: none
       border: 0
-      font-size: 16px
+      font-size: 21px
 
       &:last-child
         color: #0578FF
 
 
-.calendar-input-wrapper
+.calendar-input-wrapper, .calendar-input-wrapper-last
   position: relative
   &::before
     display: block
@@ -84,8 +82,46 @@
   input
     padding-left: 52px
 
-// Hide the spin button and calendar icon in date input fields
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator 
-    display: none
-    -webkit-appearance: none
+@media (min-width: 768px)
+  .trip-type
+    padding: 8px 12px
+
+    label
+      font-size: 14px
+  .trip-type .counter
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 88px
+    font-size: 14px
+    font-weight: 500
+
+  .pick_date
+    display: flex
+    direction: row
+    width: 100%
+    justify-content: space-between
+    gap: 32px
+    &__section
+      width: 50%
+      input
+        height: 53px
+  
+  .last-input-field
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+
+  .calendar-input-wrapper-last
+    position: relative
+    &::before
+      display: block
+      position: absolute
+      width: 15.5px
+      height: 16px
+      left: 24px
+      top: 33.5px
+      content: ''
+      background-image: url('../../assets/icons/calendar_icon.svg')
+      background-repeat: no-repeat
+      background-position: center

@@ -58,16 +58,16 @@
 .trip-type .counter button {
   background: none;
   border: 0;
-  font-size: 16px;
+  font-size: 21px;
 }
 .trip-type .counter button:last-child {
   color: #0578FF;
 }
 
-.calendar-input-wrapper {
+.calendar-input-wrapper, .calendar-input-wrapper-last {
   position: relative;
 }
-.calendar-input-wrapper::before {
+.calendar-input-wrapper::before, .calendar-input-wrapper-last::before {
   display: block;
   position: absolute;
   width: 15.5px;
@@ -79,12 +79,56 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.calendar-input-wrapper input {
+.calendar-input-wrapper input, .calendar-input-wrapper-last input {
   padding-left: 52px;
 }
 
-input[type=date]::-webkit-inner-spin-button,
-input[type=date]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
+@media (min-width: 768px) {
+  .trip-type {
+    padding: 8px 12px;
+  }
+  .trip-type label {
+    font-size: 14px;
+  }
+  .trip-type .counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 88px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .pick_date {
+    display: flex;
+    direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .pick_date__section {
+    width: 50%;
+  }
+  .pick_date__section input {
+    height: 53px;
+  }
+  .last-input-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .calendar-input-wrapper-last {
+    position: relative;
+  }
+  .calendar-input-wrapper-last::before {
+    display: block;
+    position: absolute;
+    width: 15.5px;
+    height: 16px;
+    left: 24px;
+    top: 33.5px;
+    content: "";
+    background-image: url("../../assets/icons/calendar_icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }/*# sourceMappingURL=hero-form.css.map */

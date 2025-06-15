@@ -13,4 +13,23 @@
   color: #202020;
   margin-top: 24px;
   margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 64px 32px 128px 32px;
+  }
+  .hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .hero p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #202020;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
 }/*# sourceMappingURL=hero.css.map */

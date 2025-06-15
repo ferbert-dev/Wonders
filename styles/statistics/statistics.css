@@ -35,4 +35,49 @@
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .statistics {
+    background: #0578FF;
+    color: #fff;
+  }
+  .statistics .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 64px 32px;
+  }
+  .statistics__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .statistics__container__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    -moz-column-gap: 128px;
+         column-gap: 128px;
+  }
+  .statistics__cell {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .statistics__cell h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  .statistics__cell p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=statistics.css.map */

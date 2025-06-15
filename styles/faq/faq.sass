@@ -1,12 +1,15 @@
 .faqs 
     display: flex
-    max-width: 1086px
     align-items: center
     text-align: center
     padding: 64px 0 142px 0
+    @media (min-width: 768px)
+      padding: 64px 12px 142px 12px
+    @media (min-width: 1440px)
+      padding: 64px 177px 142px 177px
     &__container 
       width: 100%
-    
+      max-width: 1086px
       h1 
         font-size: 64px
         font-weight: bold
@@ -47,6 +50,11 @@
     
     .faq-header span 
       font-size: 33px
+
+
+
+
+
 
 .first
   border-top: none

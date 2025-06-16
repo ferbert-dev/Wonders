@@ -3,9 +3,6 @@
   background: #0578FF;
   color: #202020;
 }
-.contact__container {
-  max-width: 1440px;
-}
 .contact__container__contact-card {
   display: block;
   background: #FFF;

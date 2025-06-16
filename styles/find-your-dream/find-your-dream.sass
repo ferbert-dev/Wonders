@@ -52,20 +52,25 @@
                 margin: 0
 
         &__gallery
-            width: 100%
             display: grid
-            grid-template-columns: 1fr 1fr
-            grid-template-rows: auto auto auto auto
+            grid-template-columns: 340px 340px
+            grid-template-rows: 380px 362px 425px 225px
             gap: 24px
 
             .image
-                width: 100%
                 display: block
+                object-fit: cover
+             
+            .img-container
+                display: flex         // optional, but makes centering easy
+                align-items: stretch  // makes sure child fills height
+                justify-content: stretch
+                overflow: hidden
 
             .first // Row 1: first image spans two columns
                 grid-column: 1 / span 2
                 grid-row: 1
-
+        
             .second  // Row 2: second image spans two columns
                 grid-column: 1 / span 2
                 grid-row: 2
@@ -81,7 +86,7 @@
             .fifth
                 grid-column: 1 / span 2
                 grid-row: 4
- 
+
 @media (min-width: 1440px)
     .find-your-dream
         display: block

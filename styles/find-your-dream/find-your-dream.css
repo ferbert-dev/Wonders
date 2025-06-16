@@ -50,15 +50,21 @@
     margin: 0;
   }
   .find-your-dream__gallery {
-    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 340px 340px;
+    grid-template-rows: 380px 362px 425px 225px;
     gap: 24px;
   }
   .find-your-dream__gallery .image {
-    width: 100%;
     display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .find-your-dream__gallery .img-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    overflow: hidden;
   }
   .find-your-dream__gallery .first {
     grid-column: 1/span 2;

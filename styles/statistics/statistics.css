@@ -40,12 +40,10 @@
   .statistics {
     background: #0578FF;
     color: #fff;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
   }
   .statistics .container {
-    display: flex;
+    width: 100%;
+    padding: 64px 32px;
   }
   .statistics__container {
     display: flex;
@@ -91,15 +89,14 @@
   }
   .statistics__container {
     display: flex;
-    width: 100%;
-    flex-wrap: wrap;
     margin: 0 0;
     padding: 60px 64px;
   }
   .statistics__container__wrapper {
+    max-width: 1440px;
+    width: 95%;
     display: flex;
     text-align: center;
-    direction: row;
     justify-content: space-between;
     margin: 0 0;
   }

@@ -1,7 +1,9 @@
 .hero
+
   padding-bottom: 128px
   
-  @media (min-width: 768px)
+  .image_hero
+      display: none
   h1
     font-size: 32px
     font-weight: 700
@@ -17,19 +19,41 @@
 
 @media (min-width: 768px)
  .hero
-  padding: 64px 32px 128px 32px
+    padding: 64px 32px 128px 32px
+
+    .container
+      padding: 0 0
+      //max-width: 640px
+      
+    h1
+      font-size: 64px
+      font-weight: 700
+      margin-top: 0
+      margin-bottom: 0
+
+    p
+      font-size: 16px
+      font-weight: 400
+      color: #202020
+      margin-top: 24px
+      margin-bottom: 24px 
+
+@media (min-width: 1400px)
+  .hero
+    padding: 64px 64px 128px 64px
+    display: flex
+    direction: row
+    justify-content: space-between
+    gap: 32px
+    .container
+      max-width: 704px
+      .image_hero
+        display: block
+        width: 640px
+        height: 704px
+        object-fit: cover
+          
 
   
-  @media (min-width: 768px)
-  h1
-    font-size: 64px
-    font-weight: 700
-    margin-top: 0
-    margin-bottom: 0
 
-  p
-    font-size: 16px
-    font-weight: 400
-    color: #202020
-    margin-top: 24px
-    margin-bottom: 24px   
+

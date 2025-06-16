@@ -1,6 +1,9 @@
 .hero {
   padding-bottom: 128px;
 }
+.hero .image_hero {
+  display: none;
+}
 .hero h1 {
   font-size: 32px;
   font-weight: 700;
@@ -19,6 +22,9 @@
   .hero {
     padding: 64px 32px 128px 32px;
   }
+  .hero .container {
+    padding: 0 0;
+  }
   .hero h1 {
     font-size: 64px;
     font-weight: 700;
@@ -31,5 +37,24 @@
     color: #202020;
     margin-top: 24px;
     margin-bottom: 24px;
+  }
+}
+@media (min-width: 1400px) {
+  .hero {
+    padding: 64px 64px 128px 64px;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .hero .container {
+    max-width: 704px;
+  }
+  .hero .container .image_hero {
+    display: block;
+    width: 640px;
+    height: 704px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=hero.css.map */

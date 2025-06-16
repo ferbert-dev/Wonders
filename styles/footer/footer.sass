@@ -15,7 +15,7 @@
       justify-content: center
       flex-wrap: nowrap
       gap: 32px
-      margin-bottom: 70px
+      //margin-bottom: 70px
 
       &__about
         display: flex
@@ -34,12 +34,6 @@
         width: 320px
         height: 512px
         font-size: 16px
-        @media (min-width: 768px)
-          flex-direction: row
-          width: auto
-          height: auto
-          flex-wrap: wrap
-          gap: 40px
       
         &__column
           display: flex
@@ -85,58 +79,48 @@
 @media (min-width: 768px) 
   .footer
     &__container
-      display: flex
-      flex-direction: column
-      align-items: center
-      width: 100%
-      padding-top: 64px
-      background-color: #0578FF
-      color: #FFFFFF
-
+      align-items: flex-start
       &__content
-        display: flex
-        flex-direction: column
         align-items: flex-start
-        gap: 32px
-        margin-bottom: 70px
-
         &__about
-          display: flex
-          flex-direction: row
-          align-items: left
-          justify-content: left
-          gap: 16px
-          font-size: 34px
-          width: 100%
-          height: 100%
-  
+          
         &__columns  
-          display: flex
           flex-direction: row
-          font-size: 16px
-          gap: 56px
+          //width: auto
+          //height: auto
+          flex-wrap: wrap
+          gap: 40px
       
           &__column
-            display: flex
-            flex-direction: column
       
             h3
-              font-size: 20px 
-              margin-bottom: 20px
 
             ul
-              display: flex
-              flex-direction: column
-              list-style: none
-              padding: 0
-              margin: 0
-              gap: 26px
       
-        &__copyright
-          display: block
-          text-align: left
-          flex-direction: column
-          font-weight: 600
-          font-style: normal
-          line-height: 150%
-          letter-spacing: -2%
+    &__copyright
+
+@media (min-width: 1400px) 
+  .footer
+    align-items: left
+    &__container
+      align-items: left
+      align-items: flex-start
+      gap: 40px
+      &__content
+        align-items: left
+        flex-direction: row
+        justify-content: space-between
+        flex-direction: left
+        width: 100%
+        padding-bottom: 0
+        padding: 64px
+        &__columns
+          width: 80%
+          gap: 50px
+          flex-direction: row
+          flex-wrap: nowrap
+          &__column
+            gap: 64px
+          &__about
+            width: 50%
+           

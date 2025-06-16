@@ -17,6 +17,12 @@ body {
   margin: 0;
   display: block;
 }
+@media (min-width: 1400px) {
+  body {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
 
 .container {
   width: 100%;

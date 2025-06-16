@@ -51,11 +51,25 @@
                 text-align: left
                 margin: 0
 
-        &__gallery
+        &__gallery 
             display: grid
-            grid-template-columns: 340px 340px
-            grid-template-rows: 380px 362px 425px 225px
-            gap: 24px
+            grid-template-columns: repeat(2, 0.8fr)
+            grid-template-rows: repeat(7, 0.24fr) repeat(2, 0.16fr) repeat(3, 0.23fr)
+            grid-column-gap: 24px
+            grid-row-gap: 24px     
+
+
+            .first 
+                grid-area: 1 / 1 / 4 / 3 
+
+            .second 
+                grid-area: 4 / 1 / 7 / 3 
+            .third 
+                grid-area: 7 / 1 / 11 / 2 
+            .fourth 
+                grid-area: 7 / 2 / 11 / 3 
+            .fifth 
+                grid-area: 11 / 1 / 13 / 3 
 
             .image
                 display: block
@@ -67,27 +81,8 @@
                 justify-content: stretch
                 overflow: hidden
 
-            .first // Row 1: first image spans two columns
-                grid-column: 1 / span 2
-                grid-row: 1
-        
-            .second  // Row 2: second image spans two columns
-                grid-column: 1 / span 2
-                grid-row: 2
 
-            .third
-                grid-column: 1
-                grid-row: 3
-
-            .fourth
-                grid-column: 2
-                grid-row: 3
-
-            .fifth
-                grid-column: 1 / span 2
-                grid-row: 4
-
-@media (min-width: 1440px)
+@media (min-width: 1200px)
     .find-your-dream
         display: block
         padding: 128px 64px
@@ -107,28 +102,29 @@
                 margin: 0
 
         &__gallery
+            width: 100%
             display: grid
-            grid-template-columns: repeat(9, auto)
-            grid-template-rows: repeat(6, 1fr)
+            grid-template-columns: repeat(5, 1.2fr) repeat(3, 1.1fr) repeat(4, 0.9fr)
+            grid-template-rows: repeat(3, 0.8fr) repeat(2, 1.1fr) repeat(3, 0.8fr)
             gap: 24px
-            grid-template-areas: "first first first first third third fourth fourth fourth" "first first first first third third fourth fourth fourth" "first first first first third third fourth fourth fourth" "second second second second third third fourth fourth fourth" "second second second second fifth fifth fifth fifth fifth" "second second second second fifth fifth fifth fifth fifth"
 
             .image
                 display: block
-                width: 100%
-                height: 100%
-
+                object-position: center center
+                object-fit: cover
+    
             .first
-                grid-area: first
+               grid-area: 1 / 1 / 5 / 6
 
             .second
-                grid-area: second
+                grid-area: 5 / 1 / 9 / 6
+                display: flex
 
             .third
-                grid-area: third
+                grid-area: 1 / 6 / 6 / 9
 
             .fourth
-                grid-area: fourth
+                grid-area: 1 / 9 / 6 / 13
 
             .fifth
-                grid-area: fifth
+                grid-area: 6 / 6 / 9 / 13

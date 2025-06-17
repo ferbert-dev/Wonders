@@ -26,6 +26,8 @@
 .find-your-dream .image {
   width: 100%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -73,8 +75,6 @@
   }
   .find-your-dream__gallery .image {
     display: block;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .find-your-dream__gallery .img-container {
     display: flex;
@@ -113,8 +113,6 @@
     display: block;
     -o-object-position: center center;
        object-position: center center;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .find-your-dream__gallery .first {
     grid-area: 1/1/5/6;

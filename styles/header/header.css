@@ -13,13 +13,11 @@
   background: none;
   border: 0;
 }
+.header__menu {
+  display: none;
+}
 
 @media (min-width: 768px) {
-  .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   .header__container.container {
     padding: 40px 32px;
   }
@@ -40,5 +38,29 @@
   .header__burger-button {
     background: none;
     border: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .header__menu {
+    display: block;
+  }
+  .header__menu__list {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 610px;
+    height: 32px;
+    padding-left: 0;
+    margin: 0;
+  }
+  .header__link {
+    font-size: 20px;
+    line-height: 27px;
+    text-decoration: none;
+    color: #202020;
+  }
+  .header__burger-button {
+    display: none;
   }
 }/*# sourceMappingURL=header.css.map */

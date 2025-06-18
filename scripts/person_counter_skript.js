@@ -32,5 +32,5 @@ function initCounter(){
 }
 
 
-counter.addEventListener('click', debouncedCounterHandler);
+counter.addEventListener('click', counterHandler);
 initCounter();

@@ -2,7 +2,6 @@ const counter = document.querySelector("#counter");
 const display = document.querySelector("#trip-counter");
 
 let count = 0;
-const delay_time = 250;
 
 function debounce(func, delay) {
   let timeoutId;
@@ -14,7 +13,7 @@ function debounce(func, delay) {
   };
 }
 
-const debouncedCounterHandler = debounce(counterHandler, delay_time);
+const debouncedCounterHandler = debounce(counterHandler, 250);
 
 function counterHandler(event){  
  console.log("hello event: ", event.target.id);
@@ -23,7 +22,8 @@ function counterHandler(event){
     display.textContent = count;
    }
     else if(event.target.id==='trip-plus' && count<10){
-    display.textContent = ++count;
+      count++;
+    display.textContent = count;
     }
 }
 
@@ -32,5 +32,6 @@ function initCounter(){
 }
 
 
-counter.addEventListener('click', counterHandler);
+counter.addEventListener('click', debouncedCounterHandler);
+
 initCounter();

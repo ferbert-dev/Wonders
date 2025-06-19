@@ -26,7 +26,7 @@ const picker = new Litepicker({
   setup: (picker) => {
     picker.on('apply', (date1, date2) => {
       // Custom action on apply, if needed
-     input_dep_picker.value = date1;
+     //input_dep_picker.value = date1;
      console.log(date1, date2);
     });
   }

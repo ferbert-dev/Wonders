@@ -1,0 +1,179 @@
+.litepicker
+   border-radius: 16px
+   display: flex
+   direction: column 
+   box-shadow: none
+   border: none
+
+.container__main
+  font-family: 'Poppins', sans-serif
+  background: #ffff
+  border-radius: 16px
+  box-shadow: none
+  border: none
+
+.container__months
+  display: flex
+  gap: 36px
+  direction: row
+  border: none
+  box-shadow: none
+  justify-content: center
+  padding: 24px 32px 0 32px
+
+.columns-2
+    border: none
+    box-shadow: none
+
+.month-item
+  flex: 1
+  min-width: 40%
+
+  .month-item-header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 8px
+
+    .button-previous-month,
+    .button-next-month
+      background: transparent
+      border: none
+      outline: none
+      color: #0578FF
+      border-radius: 50%
+      width: 36px
+      height: 36px
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: #ffff 0.2s
+
+      &:hover
+        background: #f0f4ff
+
+    .month-item-name,
+    .month-item-year
+      font-size: 1.12rem
+      font-weight: 500
+      color: #232b34
+      border: none
+      background: transparent
+      margin-right: 4px
+
+
+  .month-item-weekdays-row
+    display: grid
+    grid-template-columns: repeat(7, 1fr)
+    gap: 0
+    margin-bottom: 6px
+
+    div
+      color: #a6afbd
+      font-weight: 500
+      text-align: center
+      font-size: 1em
+
+  .container__days
+    display: grid
+    grid-template-columns: repeat(7, 38px)
+    grid-auto-rows: 38px
+    gap: 0
+    justify-content: center
+
+    .day-item
+      color: #232b34
+      font-weight: 500
+      border-radius: 50%
+      height: 38px
+      width: 38px
+      margin: 0 auto
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 1em
+      transition: #ffff 0.2s, color 0.2s
+
+      &:hover
+        background: #e3f0ff
+        color: #0578FF
+        cursor: pointer
+
+      &.is-today
+        border: 1.5px solid #0578FF
+
+      &.is-selected,
+      &.is-range-start,
+      &.is-range-end
+        background: #0578FF
+        color: #fff
+
+      &.is-in-range
+        background: #cce2ff
+        color: #0578FF
+
+// Footer Buttons
+.litepicker .container__footer
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    background-color:#ffff
+    box-shadow: none
+    border: none
+    width: 99%
+    gap: 20px
+    padding: 24px 
+    webkit-box-shadow: none
+
+    .preview-date-range
+        display: none
+
+    .button-cancel
+        background: none
+        color: #20202080
+        font-family: 'Poppins', sans-serif
+        border: none
+        border-radius: 12px
+        font-weight: 600
+        font-size: 1em
+        padding: 0.5em 1.5em
+        transition: color 0.2s
+
+        &:hover
+            color: #232b34
+
+    .button-apply
+        background: #0578FF
+        color: #fff
+        font-family: 'Poppins', sans-serif
+        border: none
+        border-radius: 12px
+        font-weight: 600
+        font-size: 1em
+        padding: 0.5em 1.5em
+        box-shadow: 0 2px 8px rgba(5,120,255,0.08)
+        transition: #ffff 0.2s
+
+        &:hover
+            background: #0251b6
+
+// Tooltip (hidden by default)
+.container__tooltip
+  display: none
+
+// Responsive: Mobile layout
+@media (max-width: 700px)
+  .container__main
+    max-width: 98vw
+    padding: 12px
+  .container__months
+    flex-direction: column
+    gap: 16px
+    padding: 16px 4px 0 4px
+  .month-item
+    min-width: unset
+    width: 100%
+  .container__footer
+    flex-direction: column
+    align-items: stretch
+    padding: 8px 8px 0 8px

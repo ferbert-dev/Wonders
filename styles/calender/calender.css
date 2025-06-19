@@ -1,0 +1,186 @@
+.litepicker {
+  border-radius: 16px;
+  display: flex;
+  direction: column;
+  box-shadow: none;
+  border: none;
+}
+
+.container__main {
+  font-family: "Poppins", sans-serif;
+  background: white;
+  border-radius: 16px;
+  box-shadow: none;
+  border: none;
+}
+
+.container__months {
+  display: flex;
+  gap: 36px;
+  direction: row;
+  border: none;
+  box-shadow: none;
+  justify-content: center;
+  padding: 24px 32px 0 32px;
+}
+
+.columns-2 {
+  border: none;
+  box-shadow: none;
+}
+
+.month-item {
+  flex: 1;
+  min-width: 40%;
+}
+.month-item .month-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.month-item .month-item-header .button-previous-month,
+.month-item .month-item-header .button-next-month {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #0578FF;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: white 0.2s;
+}
+.month-item .month-item-header .button-previous-month:hover,
+.month-item .month-item-header .button-next-month:hover {
+  background: #f0f4ff;
+}
+.month-item .month-item-header .month-item-name,
+.month-item .month-item-header .month-item-year {
+  font-size: 1.12rem;
+  font-weight: 500;
+  color: #232b34;
+  border: none;
+  background: transparent;
+  margin-right: 4px;
+}
+.month-item .month-item-weekdays-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0;
+  margin-bottom: 6px;
+}
+.month-item .month-item-weekdays-row div {
+  color: #a6afbd;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1em;
+}
+.month-item .container__days {
+  display: grid;
+  grid-template-columns: repeat(7, 38px);
+  grid-auto-rows: 38px;
+  gap: 0;
+  justify-content: center;
+}
+.month-item .container__days .day-item {
+  color: #232b34;
+  font-weight: 500;
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  transition: white 0.2s, color 0.2s;
+}
+.month-item .container__days .day-item:hover {
+  background: #e3f0ff;
+  color: #0578FF;
+  cursor: pointer;
+}
+.month-item .container__days .day-item.is-today {
+  border: 1.5px solid #0578FF;
+}
+.month-item .container__days .day-item.is-selected, .month-item .container__days .day-item.is-range-start, .month-item .container__days .day-item.is-range-end {
+  background: #0578FF;
+  color: #fff;
+}
+.month-item .container__days .day-item.is-in-range {
+  background: #cce2ff;
+  color: #0578FF;
+}
+
+.litepicker .container__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: white;
+  box-shadow: none;
+  border: none;
+  width: 99%;
+  gap: 20px;
+  padding: 24px;
+  webkit-box-shadow: none;
+}
+.litepicker .container__footer .preview-date-range {
+  display: none;
+}
+.litepicker .container__footer .button-cancel {
+  background: none;
+  color: rgba(32, 32, 32, 0.5019607843);
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 0.5em 1.5em;
+  transition: color 0.2s;
+}
+.litepicker .container__footer .button-cancel:hover {
+  color: #232b34;
+}
+.litepicker .container__footer .button-apply {
+  background: #0578FF;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 0.5em 1.5em;
+  box-shadow: 0 2px 8px rgba(5, 120, 255, 0.08);
+  transition: white 0.2s;
+}
+.litepicker .container__footer .button-apply:hover {
+  background: #0251b6;
+}
+
+.container__tooltip {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .container__main {
+    max-width: 98vw;
+    padding: 12px;
+  }
+  .container__months {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 4px 0 4px;
+  }
+  .month-item {
+    min-width: unset;
+    width: 100%;
+  }
+  .container__footer {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px 8px 0 8px;
+  }
+}/*# sourceMappingURL=calender.css.map */

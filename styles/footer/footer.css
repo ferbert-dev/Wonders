@@ -78,6 +78,10 @@
 }
 
 @media (min-width: 768px) {
+  .footer .container {
+    padding: 64px 32px;
+    gap: 32px;
+  }
   .footer__container {
     align-items: flex-start;
   }
@@ -86,8 +90,13 @@
   }
   .footer__container__content__columns {
     flex-direction: row;
-    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    flex-wrap: nowrap;
     gap: 40px;
+  }
+  .footer__container__content__columns__column {
+    min-width: 192px;
   }
 }
 @media (min-width: 1400px) {

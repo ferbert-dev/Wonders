@@ -78,6 +78,11 @@
 
 @media (min-width: 768px) 
   .footer
+
+    .container
+      padding: 64px 32px
+      gap: 32px
+
     &__container
       align-items: flex-start
       &__content
@@ -86,13 +91,13 @@
           
         &__columns  
           flex-direction: row
-          //width: auto
-          //height: auto
-          flex-wrap: wrap
+          width: auto
+          height: auto
+          flex-wrap: nowrap
           gap: 40px
       
           &__column
-      
+            min-width: 192px
             h3
 
             ul

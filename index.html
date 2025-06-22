@@ -5,8 +5,9 @@
         <meta name="viewport"
             content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         <title>Document</title>
-             <!-- Litepicker CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" />
+        <!-- Litepicker CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -80,7 +81,7 @@
                     </p>
 
                     <form class="hero-form">
-                        <div class="trip-type">
+                        <div class="trip-type" id ="radioGroup">
                             <div class="radio-wrapper">
                                 <input
                                     id="round-trip"
@@ -113,8 +114,9 @@
                                 <input
                                     id="departure"
                                     class="hero-form__input"
-                                    placeholder="Your City/Station" />
-                                <div id="dep-autocomplete-list" class ="autocomplete-list shape"></div>
+                                    placeholder="Your City/Station" required />
+                                <div id="dep-autocomplete-list"
+                                    class="autocomplete-list shape"></div>
                             </div>
                             <div class="pick_date__section">
                                 <label for="arrival"
@@ -122,8 +124,9 @@
                                 <input
                                     id="arrival"
                                     class="hero-form__input"
-                                    placeholder="Where to?" />
-                                <div id="arr-autocomplete-list" class ="autocomplete-list shape"></div>
+                                    placeholder="Where to?" required />
+                                <div id="arr-autocomplete-list"
+                                    class="autocomplete-list shape"></div>
                             </div>
                         </div>
                         <div class="pick_date">
@@ -133,7 +136,10 @@
                                     your lucky day</label>
 
                                 <div class="calendar-input-wrapper">
-                                <input class="hero-form__input" type="text" id="dep-date-datepicker" placeholder="Depart" readonly style="cursor:pointer;">
+                                    <input class="hero-form__input" type="text"
+                                        id="dep-date-datepicker"
+                                        placeholder="Depart"
+                                        style="cursor:pointer;" readonly>
                                 </div>
                             </div>
                             <div class="pick_date__section last-input-field">
@@ -142,7 +148,7 @@
                                         id="ret-date-datepicker"
                                         type="text"
                                         class="hero-form__input"
-                                        placeholder="Return" />
+                                        placeholder="Return" readonly/>
                                 </div>
                             </div>
                         </div>
@@ -437,8 +443,9 @@
         <script src="scripts/burger.js"></script>
         <script src="scripts/faq.js"></script>
         <script src="scripts/hero_form.js"></script>
-         <script src="scripts/person_counter_skript.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"></script>
+        <script src="scripts/person_counter_skript.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"></script>
         <script src="scripts/hero_form_calender.js"></script>
     </body>
 </html>

@@ -85,6 +85,10 @@
   padding-left: 52px;
 }
 
+.calendar-input-wrapper-last-hidden {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .trip-type {
     padding: 8px 12px;

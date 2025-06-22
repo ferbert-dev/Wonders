@@ -2,6 +2,8 @@
 const input_dep_picker = document.getElementById('dep-date-datepicker');
 const input_ret_picker = document.getElementById('ret-date-datepicker');
 
+const input_return_div = document.getElementById('return_input_div');
+const input_return_div_wrapper = document.getElementById('return_input_div_wrapper');
 const selected = document.querySelector('input[name="trip-type"]:checked');
 
 
@@ -9,13 +11,23 @@ const radioGroup = document.getElementById('radioGroup');
 
 let picker;
 
+function hideReturnField(){
+   input_return_div_wrapper.classList.replace("calendar-input-wrapper-last","calendar-input-wrapper-last-hidden");
+}
+
+function showReturnField(){
+ input_return_div_wrapper.classList.replace("calendar-input-wrapper-last-hidden","calendar-input-wrapper-last");
+}
+
 radioGroup.addEventListener('click', function (event) {
   if (event.target && event.target.type === 'radio') {
     console.log("Selected:", event.target.value);
     if (event.target.value === "one-way-trip") {
+      hideReturnField();
       createPicker('single');
     }
     else {
+      showReturnField();
       createPicker('multiple');
     }
   }
@@ -27,6 +39,7 @@ function createPicker(mode) {
   if (picker) {
     picker.destroy();
   }
+  cleanInput();
 
   if (mode === 'single') {
     picker = new Litepicker({
@@ -94,6 +107,15 @@ function createPicker(mode) {
     });
 
   }
+}
+
+function cleanInput(){
+   if(input_dep_picker.value){
+    input_dep_picker.value ="";
+   }
+    if(input_ret_picker.value){
+    input_ret_picker.value="";
+   }
 }
 
 createPicker('multiple');

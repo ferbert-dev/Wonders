@@ -23,27 +23,27 @@
             <header class="header">
                 <div class="container header__container">
                     <div class="header__container__icon">
-                        <img src="assets/icons/logo_icon.svg" alt="Logo"
+                        <img src="assets/icons/logo_icon.svg" alt="Company logo"
                             class="logo">
                         <span
-                            class="header__container__icon__text">Wonders</span>
+                            class="header__container__icon__text"  alt="Company name">Wonders</span>
                     </div>
                     <button id="burger-opener" class="header__burger-button">
                         <img id="burger-icon"
                             src="assets/icons/burger_opened_icon.svg"
-                            alt="Menu Icon">
+                            alt="Menu">
                     </button>
                     <div class="header__menu">
                         <nav>
                             <ul class="header__menu__list">
                                 <li><a href="#mobile-app"
-                                        class="header__link">Mobile
+                                        class="header__link" alt="Link to the mobile section">Mobile
                                         App</a></li>
                                 <li><a href="#faqs"
-                                        class="header__link">FAQs</a></li>
+                                        class="header__link" alt="Link to the faq">FAQs</a></li>
                                 <li><a href="#contact"
-                                        class="header__link">Contact</a></li>
-                                <li><a href="#sign-up" class="header__link">Sign
+                                        class="header__link" alt="Link to the contact card">Contact</a></li>
+                                <li><a href="#sign-up" class="header__link"  alt="Link Sign Up">Sign
                                         Up</a></li>
                             </ul>
                         </nav>
@@ -56,13 +56,13 @@
                     <nav>
                         <ul class="burger__list">
                             <li><a href="#mobile-app"
-                                    class="burger__link">Mobile
+                                    class="burger__link" alt="Link to the mobile section">Mobile
                                     App</a></li>
                             <li><a href="#faqs"
-                                    class="burger__link">FAQs</a></li>
+                                    class="burger__link" alt="Link to the faq">FAQs</a></li>
                             <li><a href="#contact"
-                                    class="burger__link">Contact</a></li>
-                            <li><a href="#sign-up" class="burger__link">Sign
+                                    class="burger__link" alt="Link to the contact card">Contact</a></li>
+                            <li><a href="#sign-up" class="burger__link" alt="Link Sign Up">Sign
                                     Up</a></li>
                         </ul>
                     </nav>
@@ -71,12 +71,12 @@
 
             <section class="hero">
                 <div class="container">
-                    <h1>Skip the Climbing, Catch the Bus</h1>
+                    <h1 alt="Title">Skip the Climbing, Catch the Bus</h1>
 
-                    <p>
-                        We sell tickets to the best seats in the house – houses
+                    <p alt="Subtitle">
+                        We sell tickets to the best seats in the house &mdash; houses
                         on wheels,
-                        that is! Get ready for jaw-dropping views without
+                        that is! Get ready for jaw&ndash;dropping views without
                         breaking a sweat.
                     </p>
 
@@ -87,7 +87,7 @@
                                     id="round-trip"
                                     type="radio"
                                     name="trip-type"
-                                    value="round-trip" checked />
+                                    value="round-trip" alt="Button to set trip type to round trip" checked />
                                 <label for="round-trip">Round trip</label>
                             </div>
 
@@ -96,15 +96,15 @@
                                     id="one-way-trip"
                                     type="radio"
                                     name="trip-type"
-                                    value="one-way-trip" />
+                                    value="one-way-trip" alt="Button to set trip type to one way trip"/>
                                 <label for="one-way-trip">One way</label>
                             </div>
 
                             <div id="counter-section" class="counter">
                                 <img src="assets/icons/person_icon.svg" />
-                                <button type="button" id="trip-minus">-</button>
-                                <span id="trip-counter">1</span>
-                                <button type="button" id="trip-plus">+</button>
+                                <button type="button" id="trip-minus" alt="Button add person count">-</button>
+                                <span id="trip-counter" alt="display person count setted to the trip">1</span>
+                                <button type="button" id="trip-plus" alt="Button remove person count">+</button>
                             </div>
                         </div>
                         <div class="pick_date">
@@ -114,7 +114,7 @@
                                 <input
                                     id="departure"
                                     class="hero-form__input"
-                                    placeholder="Your City/Station" required />
+                                    placeholder="Your City/Station" alt="Departure to" required />
                                 <div id="dep-autocomplete-list"
                                     class="autocomplete-list shape"></div>
                             </div>
@@ -124,7 +124,7 @@
                                 <input
                                     id="arrival"
                                     class="hero-form__input"
-                                    placeholder="Where to?" required />
+                                    placeholder="Where to?" alt="Where to go" required />
                                 <div id="arr-autocomplete-list"
                                     class="autocomplete-list shape"></div>
                             </div>
@@ -139,27 +139,27 @@
                                     <input class="hero-form__input" type="text"
                                         id="dep-date-datepicker"
                                         placeholder="Depart"
-                                        style="cursor:pointer;" readonly>
+                                        style="cursor:pointer;" alt="Departure date" readonly>
                                 </div>
                             </div>
-                            <div class="pick_date__section last-input-field">
-                                <div class="calendar-input-wrapper-last">
+                            <div id = "return_input_div" class="pick_date__section last-input-field">
+                                <div id = "return_input_div_wrapper" class="calendar-input-wrapper-last">
                                     <input
                                         id="ret-date-datepicker"
                                         type="text"
                                         class="hero-form__input"
-                                        placeholder="Return" readonly/>
+                                        placeholder="Return" alt="Return date" readonly/>
                                 </div>
                             </div>
                         </div>
 
-                        <button class="submit">Find My Alpine Ride</button>
+                        <button class="submit" alt="Submit button to send request about trips">Find My Alpine Ride</button>
                     </form>
                 </div>
                 <div class="container hero_container">
                     <img class="image_hero"
                         src="assets/images/hero_img.png"
-                        alt="Hero">
+                        alt="Hero image mountains">
                 </div>
             </div>
         </section>
@@ -204,7 +204,7 @@
                             alt="Bus in Snow"></div>
                     <div class="fourth img-container"><img class="image shape"
                             src="assets/images/img04.png"
-                            alt="Bus in Forest"></div>
+                            alt="Forest"></div>
                     <div class="fifth img-container"><img class="image shape"
                             src="assets/images/img05.png"
                             alt="Bus in Forest"></div>
@@ -220,19 +220,19 @@
                         target="_blank">
                         <img class="shape"
                             src="assets/icons/google_play_gallary.png"
-                            alt="Google Play">
+                            alt="Google Play link to the mobile app">
                     </a>
                     <a
                         href="https://consumer.huawei.com/de/campaign/appgallery/"
                         target="_blank">
                         <img class="shape" src="assets/icons/huawei_gallery.png"
-                            alt="Huawei Gallery">
+                            alt="Huawei Gallery link to the mobile app">
                     </a>
                     <a href="https://www.apple.com/app-store/"
                         target="_blank">
                         <img class="shape"
                             src="assets/icons/appstore_gallery.png"
-                            alt="App Store">
+                            alt="App Store link to the mobile app">
                     </a>
                 </div>
             </div>
@@ -245,7 +245,7 @@
                         <div>Alpine Bus Journeys?</div>
                         <span>+</span>
                     </div>
-                    <div class="faq-content">
+                    <div class="faq-content" alt="Alpine Bus Journeys?">
                         <p>Forget crowded cities! Alpine Bus Journeys are
                             your
                             comfy seat with panoramic windows to
@@ -253,9 +253,9 @@
                             mountain vistas, charming villages, and air so
                             fresh
                             it
-                            might make you yodel (please don’t, unless
-                            you're
-                            outside). It’s transportation with a side of
+                            might make you yodel (please don&apos;t, unless
+                            you&apos;re
+                            outside). It&apos;s transportation with a side of
                             unparalleled scenery (and maybe a hairpin
                             turn).</p>
                     </div>
@@ -266,13 +266,13 @@
                         <div>What about seating options?</div>
                         <span>+</span>
                     </div>
-                    <div class="faq-content">
-                        <p>Generally, you'll find comfy standard seats
+                    <div class="faq-content" alt="What about seating options?">
+                        <p>Generally, you&apos;ll find comfy standard seats
                             (great
                             views, great value, maybe great new friends)
                             and perhaps slightly better seats with extra
-                            legroom. All offer a front-row
-                            seat to the greatest show on Earth – the
+                            legroom. All offer a front&ndash;row
+                            seat to the greatest show on Earth &ndash; the
                             Alps!</p>
                     </div>
                 </div>
@@ -282,8 +282,8 @@
                         <div>What is the Alpine Wallet?</div>
                         <span>+</span>
                     </div>
-                    <div class="faq-content">
-                        <p>It's your digital stash of cash that makes
+                    <div class="faq-content" alt="What is the Alpine Wallet?">
+                        <p>It&apos;s your digital stash of cash that makes
                             booking
                             bus tickets smoother than a perfectly
                             paved mountain road. Load it up and watch your
@@ -298,7 +298,7 @@
                         <div>My Altitude Score?</div>
                         <span>+</span>
                     </div>
-                    <div class="faq-content">
+                    <div class="faq-content" alt="My Altitude Score?">
                         <p>Your loyalty points for cruising the mountain
                             roads!
                             Higher scores might get
@@ -315,7 +315,7 @@
                         <div>Why a Bus Station Fee?</div>
                         <span>+</span>
                     </div>
-                    <div class="faq-content">
+                    <div class="faq-content" alt="Why a Bus Station Fee?">
                         <p>A small contribution to ensure the station is
                             clean,
                             has reasonably fresh
@@ -332,8 +332,8 @@
                         <div>Why are buses late?</div>
                         <span>+</span>
                     </div>
-                    <div class="faq-content">
-                        <p>Sometimes it's the weather (snow happens!),
+                    <div class="faq-content" alt="Why are buses late?">
+                        <p>Sometimes it&apos;s the weather (snow happens!),
                             sometimes
                             a sudden flock of particularly
                             slow-moving sheep on the road, and sometimes the
@@ -349,12 +349,12 @@
                         <div>Peak Season Surcharge?</div>
                         <span>+</span>
                     </div>
-                    <div class="faq-content">
-                        <p>It's the little extra you pay to enjoy the
+                    <div class="faq-content" alt="Peak Season Surcharge?">
+                        <p>It&apos;s the little extra you pay to enjoy the
                             authentic
                             experience of sharing
                             breathtaking views with a lot of your closest
-                            friends (who you haven't met yet)
+                            friends (who you haven&apos;t met yet)
                             while strategically placing your bag in the
                             overhead
                             compartment. Guarantees a vibrant, energetic
@@ -371,12 +371,12 @@
                         <h1>Contact us</h1>
                         <p class="content__contact_email_phone">
                             <a class="content__card-text"
-                                href="tel:+41 98765 43210">+41 98765
+                                href="tel:+41 98765 43210" alt="Company phone number">+41 98765
                                 43210</a>
                             <a class="content__card-text"
-                                href="mailto:hello@peakpasses.eu">hello@peakpasses.eu</a>
+                                href="mailto:hello@peakpasses.eu" alt="Company email">hello@peakpasses.eu</a>
                         </p>
-                        <div class="content__contact-adress content__card-text">
+                        <div class="content__contact-adress content__card-text" alt="Company adress">
                             <p>
                                 Alpenblick Strasse 7,
                             </p>
@@ -446,6 +446,6 @@
         <script src="scripts/person_counter_skript.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"></script>
-        <script src="scripts/hero_form_calender.js"></script>
+        <script src="scripts/hero_form_trip_logic_skript.js"></script>
     </body>
 </html>

@@ -23,11 +23,14 @@ radioGroup.addEventListener('click', function (event) {
   if (event.target && event.target.type === 'radio') {
     console.log("Selected:", event.target.value);
     if (event.target.value === "one-way-trip") {
-      hideReturnField();
+      // hideReturnField(); this methods can be activated to hide Return field if there is one way trip. 
+      // It was not requered, but can be used to make user experience better
       createPicker('single');
     }
     else {
-      showReturnField();
+      createPicker('multiple');
+      //showReturnField();
+      // It was not requered, but can be used to make user experience better
       createPicker('multiple');
     }
   }

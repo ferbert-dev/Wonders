@@ -16,6 +16,15 @@
   border: 0;
   outline: none;
 }
+.hero-form__input:disabled {
+  color: #888;
+  border: 1px dashed #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.hero-form__input:focus, .hero-form__input:active {
+  background-color: #fff;
+}
 .hero-form .submit {
   background-color: #0578FF;
   border-radius: 10px;

@@ -23,12 +23,13 @@ radioGroup.addEventListener('click', function (event) {
   if (event.target && event.target.type === 'radio') {
     console.log("Selected:", event.target.value);
     if (event.target.value === "one-way-trip") {
+       input_ret_picker.disabled = true;
       // hideReturnField(); this methods can be activated to hide Return field if there is one way trip. 
       // It was not requered, but can be used to make user experience better
       createPicker('single');
     }
     else {
-      createPicker('multiple');
+      input_ret_picker.disabled = false;
       //showReturnField();
       // It was not requered, but can be used to make user experience better
       createPicker('multiple');
@@ -43,7 +44,7 @@ function createPicker(mode) {
     picker.destroy();
   }
   cleanInput();
-
+  
   if (mode === 'single') {
     picker = new Litepicker({
       element: input_dep_picker,

@@ -21,7 +21,7 @@ A responsive landing page for booking bus tickets in the Alps.
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/Mozgo-kontrol/Wonders.git
+   git clone git@github.com:ferbert-dev/Wonders.git
    cd Wonders
 
 2. **Open `index.html` in your browser.**  
@@ -29,4 +29,4 @@ A responsive landing page for booking bus tickets in the Alps.
 
 ## Deployment
 This site is deployed on GitHub Pages:  
-[https://mozgo-kontrol.github.io/Wonders/](https://mozgo-kontrol.github.io/Wonders/)
+[https://ferbert-dev.github.io/Wonders/](https://ferbert-dev.github.io/Wonders/)
